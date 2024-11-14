@@ -1,0 +1,115 @@
+buildscript {
+    ext {
+        queryDslVersion = "5.0.0"
+    }
+}
+
+plugins {
+    id 'java'
+    id 'org.springframework.boot' version '2.6.15'
+    id 'io.spring.dependency-management' version '1.1.6'
+}
+
+group = 'org.eightbit'
+version = '0.0.1-SNAPSHOT'
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(11)
+    }
+}
+
+configurations {
+    compileOnly {
+        extendsFrom annotationProcessor
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // Spring Boot Core
+    implementation 'org.springframework.boot:spring-boot-starter'
+    implementation 'org.springframework.boot:spring-boot-starter-security'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    implementation 'org.springframework.boot:spring-boot-starter-validation'
+
+    // Lombok
+    compileOnly 'org.projectlombok:lombok'
+    annotationProcessor 'org.projectlombok:lombok'
+    testCompileOnly 'org.projectlombok:lombok'  // 추가
+    testAnnotationProcessor 'org.projectlombok:lombok'  // 추가
+
+    // Testing Dependencies
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    testImplementation 'org.springframework.security:spring-security-test'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+
+    // Database Driver
+    runtimeOnly 'org.mariadb.jdbc:mariadb-java-client'
+
+    // Apache POI for Excel handling
+    implementation 'org.apache.poi:poi-ooxml:5.2.3'
+
+    // Development Only
+//    developmentOnly 'org.springframework.boot:spring-boot-devtools'  // 추가
+
+    // ModelMapper
+    implementation 'org.modelmapper:modelmapper:3.1.1'
+
+    // JWT for token handling
+    implementation 'io.jsonwebtoken:jjwt-api:0.11.5'
+    runtimeOnly 'io.jsonwebtoken:jjwt-impl:0.11.5'
+    runtimeOnly 'io.jsonwebtoken:jjwt-jackson:0.11.5'
+
+    // QueryDSL
+    implementation "com.querydsl:querydsl-jpa:${queryDslVersion}"
+    annotationProcessor(
+            "javax.persistence:javax.persistence-api",
+            "javax.annotation:javax.annotation-api",
+            "com.querydsl:querydsl-apt:${queryDslVersion}:jpa"
+    )
+
+    // 이미지 처리 라이브러리
+    implementation 'net.coobird:thumbnailator:0.4.16'
+
+    // AWS 관련 라이브러리
+    implementation 'io.awspring.cloud:spring-cloud-starter-aws:2.3.1'
+
+    // Swagger / SpringFox for API documentation
+    implementation 'io.springfox:springfox-boot-starter:3.0.0'
+    implementation 'io.springfox:springfox-swagger-ui:3.0.0'
+
+    // OpenAPI Docs
+    implementation 'org.springdoc:springdoc-openapi-ui:1.5.13'
+
+    // WebFlux for reactive programming
+    implementation 'org.springframework.boot:spring-boot-starter-webflux'
+
+    // Spring Data REST
+    implementation 'org.springframework.boot:spring-boot-starter-data-rest'
+
+    // JSON Processing
+    implementation 'org.json:json:20210307'
+
+    // Validation
+    implementation 'javax.validation:validation-api:2.0.1.Final'
+    implementation 'org.hibernate.validator:hibernate-validator:6.2.0.Final'
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+    options.compilerArgs << "-Xlint:deprecation"  // Deprecated API 사용 경고 표시
+    options.compilerArgs << "-Xlint:unchecked"    // Unchecked 또는 unsafe operation 경고 표시
+}
+
+sourceSets {
+    main {
+        java {
+            srcDirs = ["$projectDir/src/main/java", "$projectDir/build/generated"]
+        }
+    }
+}

@@ -1,0 +1,95 @@
+/* 기본 폰트 설정
+damdda-body {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 16px;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+} */
+
+/* 기본 레이아웃 설정 */
+damdda-container {
+  /* width: 70%;
+  max-width: 1520px;
+  margin: 30px auto;
+  padding: 0 20px; */
+  /* width: 1600px;
+  max-width: 1600px;
+  margin: 0px auto; */
+}
+
+/* 제목 스타일 */
+damdda-h1,
+damdda-h2,
+damdda-h3 {
+  font-weight: 700;
+  color: #333;
+}
+
+damdda-h1 {
+  font-size: 24px;
+}
+
+damdda-h2 {
+  font-size: 20px;
+}
+
+damdda-h3 {
+  font-size: 18px;
+}
+
+/* 공통 입력 스타일 */
+damdda-input,
+damdda-textarea {
+  max-width: 300px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+damdda-input:focus,
+damdda-textarea:focus {
+  border-color: #7a82ed;
+  outline: none;
+}
+
+/* 버튼 스타일 */
+damdda-button {
+  background-color: #7a82ed;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 8px 16px;
+  box-shadow: none;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100px; /*버튼 크기 조절*/
+}
+
+damdda-button:hover {
+  background-color: #33c2e2;
+}
+
+/* 카드 및 박스 디자인 */
+damdda-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  width: 600px;
+}
+
+/* 색상 팔레트 정의 */
+:root {
+  --primary-color: #7a82ed;
+  --secondary-color: #fff6db;
+  --third-color: #f3f4f8;
+  --fourth-color: #e5e2ff --text-color: #444444;
+  --background-color: #f9f9f9;
+}

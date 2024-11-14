@@ -1,0 +1,45 @@
+.paginationContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.pageNumberButton {
+  margin: 0 4px;
+  min-width: 30px;
+  min-height: 30px;
+  font-size: 0.8rem;
+  border-radius: 50%;
+  color: #000;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.pageNumberButtonActive {
+  background-color: #b2bdfc;
+  color: #fff;
+  border-radius: 50%;
+  min-width: 30px;
+  min-height: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+}
+
+.arrowButton {
+  margin: 0 8px;
+  font-size: 1.2rem;
+  color: #677cf9;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.arrowButton:disabled {
+  color: #ccc;
+  cursor: not-allowed;
+}

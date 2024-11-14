@@ -1,0 +1,28 @@
+.container1 {
+  display: flex;
+  justify-content: center; /* 수평 중앙 정렬 */
+  align-items: center; /* 수직 중앙 정렬 */
+  text-align: center; /* 텍스트 중앙 정렬 */
+  height: 50vh;
+}
+
+.error-container {
+  padding: 20px;
+}
+
+.button-container {
+  margin-top: 20px;
+  display: flex; /* 문자열 제거 */
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.small-text {
+  font-size: 12px; /* 작은 글씨 */
+  color: gray;
+}
+
+.img {
+  width: 150px;
+}

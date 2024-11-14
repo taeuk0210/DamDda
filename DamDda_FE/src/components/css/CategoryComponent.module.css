@@ -1,0 +1,56 @@
+.category-button-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 12px; /* 둥근 모서리로 변경 */
+  padding: 10px;
+  width: 120px; /* 정사각형 모양 유지 */
+  height: 120px; 
+  cursor: pointer;
+  margin: 4px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+
+  /* 추가적인 효과를 원하시면 아래 주석을 해제하세요 */
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+}
+
+.category-button-2:hover {
+  /* background-color: #fffefe; 호버 시 배경색 변경 */
+  transform: scale(1.05); /* 호버 시 크기 증가 */
+}
+
+
+  .category-margin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .category-background {
+    width: 65px; 
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    overflow: hidden;
+  }
+  
+  .category-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  .category-container {
+    margin-top: 12px; 
+    text-align: center;
+  }
+  
+  .category-text-wrapper {
+    font-size: 15px; 
+    font-weight: 500;
+  }
+  

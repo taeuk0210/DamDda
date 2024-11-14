@@ -1,0 +1,55 @@
+.container {
+  padding: 20px;
+  max-width: 800px;
+}
+
+.deliveryInfo,
+.paymentInfo {
+  margin-bottom: 30px;
+}
+
+.title {
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: black;
+  font-size: 28px !important;
+}
+
+.infoRow {
+  display: flex;
+  margin-bottom: 5px;
+}
+
+.label {
+  font-weight: bold;
+  color: gray;
+  min-width: 80px;
+}
+
+.separator {
+  border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 20px;
+  width: 1050px;
+}
+
+.cancelButtonBox {
+  text-align: right;
+  position: relative;
+  top: -60px;
+  left: 220px;
+}
+
+.cancelButton {
+  background-color: #ff5f5f !important; /* 기본 배경색 */
+  color: white !important;
+  border: none !important;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cancelButton:disabled {
+  background-color: #d3d3d3; /* 회색 */
+  color: #808080;
+  cursor: not-allowed;
+}

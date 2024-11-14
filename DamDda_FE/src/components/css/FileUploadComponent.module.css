@@ -1,0 +1,44 @@
+.fileUploadBox {
+  background-color: #eeeeff;
+  width: 90%;
+  height: 200px;
+  margin: 0 auto;
+  border: 1px dotted #ccc;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.fileUploadBoxActive {
+  background-color: #ddddee;
+}
+
+.uploadIcon {
+  margin: 5px;
+  font-size: 70px;
+  color: #96a5ff;
+}
+
+.uploadText {
+  margin-bottom: px;
+}
+
+.uploadButton {
+  width: 200px;
+  font-size: 10px;
+  margin-top: 15px;
+  background-color: #677cf9;
+}
+
+.hiddenInput {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+}

@@ -1,0 +1,59 @@
+.formItem {
+    margin-bottom: 20px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+    max-width: 300px !important;
+}
+
+.customTextField {
+    border-radius: 8px !important;
+    background-color: white !important;
+    border: 1px solid #dfe1e5 !important;
+    transition: box-shadow 0.3s ease-in-out, border-color 0.3s ease-in-out !important;
+}
+
+.customTextField:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
+    border-color: #5c6bc0 !important;
+}
+
+.iconButton {
+    padding: 5px !important;
+    color: #5c6bc0 !important;
+}
+
+.iconButton:hover {
+    color: #3f51b5 !important;
+}
+
+.inputLine {
+    margin-bottom: 20px !important;
+    font-size: 1rem !important;
+    width: 100% !important;
+    max-width: 300px !important;
+}
+
+.inputLine:hover {
+    border-color: #677cf9 !important;
+}
+
+.title {
+    font-weight: bold !important;
+    margin-bottom: 8px !important;
+    color: #333 !important;
+}
+
+/* .inputLargeBox {
+    border-radius: 8px !important;
+    background-color: #f4f9ff !important;
+    padding: 12px !important;
+    border: 1px solid #ccc !important;
+    transition: box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out, border-color 0.3s ease-in-out !important;
+}
+
+.inputLargeBox:hover {
+    background-color: #eef4ff !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
+    border-color: #677cf9 !important;
+} */

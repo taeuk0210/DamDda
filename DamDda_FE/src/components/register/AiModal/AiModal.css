@@ -1,0 +1,76 @@
+/* 모달 중앙 정렬을 위한 스타일: 모달을 화면 중앙에 위치시키는 Flexbox 설정 */
+.ModalCentered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 모달 내부 컨테이너: 모달 내용이 들어가는 영역의 스타일 */
+.ModalContainer {
+  position: relative; /* 닫기 버튼 등의 절대 위치 요소를 위한 상대 위치 설정 */
+  padding: 30px; /* 모달 내부 여백 */
+  background-color: #fff; /* 배경색 흰색 */
+  width: 80%; /* 모달 너비를 화면의 80%로 설정 */
+  max-width: 1000px; /* 최대 너비 1000px */
+  border-radius: 12px; /* 모서리 둥글게 처리 */
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1); /* 모달에 그림자 추가 */
+  display: flex; /* Flexbox 설정으로 내부 요소 배치 */
+  flex-direction: column; /* 내부 요소들을 세로로 배치 */
+  align-items: center; /* 내부 요소를 중앙에 정렬 */
+  gap: 20px; /* 내부 요소 간 간격 20px */
+}
+
+/* 닫기(X) 버튼: 모달 상단 우측에 위치 */
+.ModalContainer .ModalCloseButton {
+  position: absolute; /* 상위 컨테이너에 상대적인 절대 위치 */
+  top: 10px; /* 위쪽에서 10px 떨어진 위치 */
+  right: 10px; /* 오른쪽에서 10px 떨어진 위치 */
+}
+
+/* 모달 헤더: 제목 등의 상단 헤더에 적용되는 스타일 */
+.ModalContainer .ModalHeader {
+  margin-bottom: 10px; /* 하단 여백 10px */
+}
+
+/* 로딩 텍스트: 로딩 중 메시지 스타일 */
+.ModalContainer .LoadingText {
+  margin-top: 10px; /* 상단 여백 10px */
+}
+
+/* 오류 메시지: 오류 발생 시 메시지 스타일 */
+.ModalContainer .ErrorMessage {
+  margin-bottom: 10px; /* 하단 여백 10px */
+  color: red; /* 빨간색 텍스트로 오류 표시 */
+}
+
+/* 텍스트 필드 스타일: 사용자 입력 영역에 적용되는 스타일 */
+.ModalContainer .TextFieldInput {
+  max-width: 100%; /* 너비는 100%로 설정 */
+  padding: 10px; /* 텍스트 필드 내부 여백 */
+  font-size: 1rem; /* 텍스트 크기 1rem */
+  margin: 0; /* 외부 여백 없음 */
+  box-sizing: border-box; /* padding과 border를 포함한 너비 계산 */
+  white-space: pre-wrap;
+}
+
+/* 텍스트 필드 내부의 textarea 스타일 */
+.ModalContainer .TextFieldInput .TextAreaInput {
+  max-width: 100%; /* 너비는 100%로 설정 */
+  padding: 10px; /* 내부 여백 */
+  font-size: 1rem; /* 텍스트 크기 1rem */
+  margin: 0; /* 외부 여백 없음 */
+  border-radius: 4px; /* 모서리 둥글게 처리 */
+}
+
+/* 버튼 컨테이너: 등록/취소 버튼을 담고 있는 컨테이너 */
+.ModalContainer .ButtonContainer {
+  display: flex; /* Flexbox로 내부 버튼 배치 */
+  justify-content: flex-end; /* 오른쪽 정렬 */
+  width: 100%; /* 컨테이너 너비 100% */
+  margin-top: 20px; /* 상단 여백 20px */
+}
+
+/* 닫기 버튼 스타일: 닫기 버튼의 오른쪽 여백 */
+.ButtonContainer .OutlinedButton {
+  margin-right: 10px; /* 오른쪽 여백 10px */
+}

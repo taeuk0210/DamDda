@@ -1,0 +1,29 @@
+.category-wrapper {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr); /* 8 items per row on large screens */
+  gap: 5px; /* Space between items */
+  padding: 10px;
+  justify-items: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+}
+
+/* 4 items per row on medium screens (tablets) */
+@media (max-width: 1200px) {
+  .category-wrapper {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* 2 items per row on small screens (mobile landscape) */
+@media (max-width: 768px) {
+  .category-wrapper {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* 1 item per row on very small screens (mobile portrait) */
+@media (max-width: 480px) {
+  .category-wrapper {
+    grid-template-columns: 1fr;
+  }
+}

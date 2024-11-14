@@ -1,0 +1,38 @@
+/* CustomInputProps.module.css */
+.formItem {
+    margin-bottom: 20px;
+    
+  }
+  
+  .formDiv {
+    font-size: 14px;
+    margin-bottom: 8px;
+    display: block;
+    color: #333;
+  }
+  
+  .customTextField {
+    margin: 10px 10px;
+    width: 100px;  }
+  
+  .inputLine {
+    margin: 10px 10px;
+    width: 100px;
+
+  }
+  
+  .title {
+    margin-bottom: 5px;
+    color: #555;
+  }
+  
+  .inputLargeBox {
+    margin: 10px 10px;
+    width: 100px;
+
+  }
+  
+  .iconButton {
+    color: #677cf9;
+  }
+  

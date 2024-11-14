@@ -1,0 +1,29 @@
+.rewardCard {
+    margin-bottom: 16px; /* mb: 2 */
+    border-radius: 8px; 
+    border-width: 2px;
+  }
+  
+  .selectedBox {
+    display: flex;
+    align-items: center;
+    color: #ff4081;
+  }
+  
+  .selectedIcon {
+    margin-right: 8px; 
+  }
+  
+  .amount {
+    font-weight: bold;
+    margin-top: 8px; 
+  }
+  
+  .title {
+    margin-bottom: 8px; 
+  }
+  
+  .gridRight {
+    text-align: right;
+  }
+  
